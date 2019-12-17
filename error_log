@@ -1,0 +1,10 @@
+[27-Feb-2019 23:57:12 UTC] PHP Warning:  require_once(assets/init.php): failed to open stream: No such file or directory in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:12 UTC] PHP Fatal error:  require_once(): Failed opening required 'assets/init.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:13 UTC] PHP Warning:  require_once(/home/traximpanel/public_html/onstellar/assets/init.php): failed to open stream: No such file or directory in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:13 UTC] PHP Fatal error:  require_once(): Failed opening required 'assets/init.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:13 UTC] PHP Warning:  require_once(/home/traximpanel/public_html/onstellar/assets/init.php): failed to open stream: No such file or directory in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:13 UTC] PHP Fatal error:  require_once(): Failed opening required 'assets/init.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:15 UTC] PHP Warning:  require_once(/home/traximpanel/public_html/onstellar/assets/init.php): failed to open stream: No such file or directory in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:15 UTC] PHP Fatal error:  require_once(): Failed opening required 'assets/init.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:15 UTC] PHP Warning:  require_once(assets/init.php): failed to open stream: No such file or directory in /home/traximpanel/public_html/onstellar/index.php on line 11
+[27-Feb-2019 23:57:15 UTC] PHP Fatal error:  require_once(): Failed opening required 'assets/init.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/traximpanel/public_html/onstellar/index.php on line 11

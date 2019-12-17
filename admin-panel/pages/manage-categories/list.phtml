@@ -1,0 +1,11 @@
+<tr class="user-list" id="UserID_<?php echo $wo['userlist']['user_id']?>" data-user-id="<?php echo $wo['userlist']['id']?>">
+   <td><?php echo $wo['userlist']['id']?></td>
+   <td>
+      <?php echo $wo['userlist']['title']; ?>
+   </td>
+   <td></td>
+      <td>
+      <a target="_blank" class="btn btn-info waves-effect btn-lang m-r-10" href="<?php  Wo_LoadAdminPage('ban-users/list');?>">EDIT</a>
+      <button onclick="Wo_DeleteUser(<?php echo $wo['userlist']['id']?>);" type="button" class="btn btn-danger waves-effect waves-light">DELETE</button>
+   </td>
+</tr>

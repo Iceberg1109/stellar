@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="block-header">
+        <h2>Users > Create New Category</h2>
+    </div>
+    <!-- Vertical Layout -->
+    <div class="row">
+        <div class="col-lg-8 col-md-8">
+            <div class="card">
+                <div class="header">
+                    <h2>Create New Category</h2>
+                </div>
+                <div class="body">
+                    <div class="alert alert-success add-settings-alert"></div>
+                    <div class="help-block"></div><br>
+					<p class="alert alert-success" id="success"><p>
+                    <form class="add-settings" method="POST">
+                         <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" id="title" name="title" class="form-control">
+                                <label class="form-label">Title</label>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="file"  name="file" class="form-control">
+                                
+                            </div>
+                        </div>
+                       
+                        
+                        <input type="hidden" name="hash_id" value="<?php echo Wo_CreateSession();?>">
+                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- #END# Vertical Layout -->
+<script>
+$(function() {
+	$('.chosen-select').on('change', function(evt, params) {
+       var selectedValue = $(this).val();
+       if (selectedValue == 'selectbox') {
+       	  $('.options').fadeIn(200);
+       } else {
+       	  $('.options').fadeOut(200);
+       }
+   });
+});
+
+$(function() {
+    var form_add_settings = $('form.add-settings');
+    form_add_settings.ajaxForm({
+        url: Wo_Ajax_Requests_File() + '?f=admin_setting&s=add_new_cat',
+        beforeSend: function() {
+            form_add_settings.find('.waves-effect').text('Please wait..');
+        },
+        success: function(data) {     
+               // alert(data);
+				$("#success").text("Category Added Successfully");
+	        form_add_settings.find('.waves-effect').text('Create');
+        }
+    });
+});
+</script>
